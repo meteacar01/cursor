@@ -28,7 +28,7 @@ namespace Stok
         public void List(string malKodu, int basTarih, int bitTarih)
         {
             conn.Open();
-            string query = "exec [dbo].[StokProcedure]'"+malKodu+"','"+ basTarih + "','"+ bitTarih + "'"; 
+            string query = "exec [dbo].[StokProcedure]'"+malKodu+"','"+ basTarih + "','"+ bitTarih + "'";  //filtrelemeye göre procedure 
             SqlCommand comd = new SqlCommand(query, conn); 
             SqlDataAdapter da = new SqlDataAdapter(comd);
             

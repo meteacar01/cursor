@@ -16,7 +16,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER PROCEDURE [dbo].[StokProcedure]
+CREATE PROCEDURE [dbo].[StokProcedure]
 	  (@MalKodu varchar(30), @BasTarih int, @BitTarih int)
 AS
 BEGIN
